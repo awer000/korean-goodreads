@@ -2,6 +2,7 @@ import React from "react";
 import AppLayout from "../components/Layout";
 import Head from "next/head";
 import { NextPage } from "next";
+import "./_app.scss";
 
 interface ComponentProps {
   Component: NextPage;
