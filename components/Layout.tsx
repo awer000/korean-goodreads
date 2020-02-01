@@ -2,7 +2,8 @@ import * as React from "react";
 import Link from "next/link";
 import "./Layout.scss";
 import { FaSearch, FaGithub } from "react-icons/fa";
-import { MdMailOutline } from "react-icons/md";
+import { MdMailOutline, MdArrowDropDown } from "react-icons/md";
+import Headroom from "react-headroom";
 
 type Props = {
   title?: string;
@@ -19,6 +20,27 @@ const Layout: React.FunctionComponent<Props> = ({ children }) => (
       </Link>
       <button className="signIn-button">로그인</button>
     </header>
+    <Headroom
+      style={{
+        top: 60,
+        left: 0,
+        right: 0,
+        zIndex: 1
+      }}
+      disableInlineStyles={true}
+    >
+      <div className="toggle-menu">
+        <div className="my-book">내 서재</div>
+        <div className="browse">
+          <a>탐색하기</a>
+          <MdArrowDropDown />
+        </div>
+        <div className="community">
+          <a>커뮤니티</a>
+          <MdArrowDropDown />
+        </div>
+      </div>
+    </Headroom>
     <div className="children">{children}</div>
     <footer className="site-footer">
       <div className="connect">

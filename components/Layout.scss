@@ -1,17 +1,22 @@
 @import "./config/_variables.scss";
 
 .Layout {
-  height: 60px;
-  background-color: $color2;
   color: $color3;
 
   header {
+    position: fixed;
+    height: 60px;
+    width: 100vw;
+    background-color: $color2;
+    z-index: 10;
+
     padding-top: 8px;
     padding-left: 10px;
     padding-right: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: $color1;
     .search-icon {
       svg {
         font-size: 20px;
@@ -35,8 +40,33 @@
     }
   }
 
+  .headroom--unfixed {
+    position: relative;
+    transform: translateY(0);
+  }
+  .headroom--scrolled {
+    transition: transform 200ms ease-in-out;
+  }
+  .headroom--unpinned {
+    position: fixed;
+    transform: translateY(-100%);
+  }
+  .headroom--pinned {
+    position: fixed;
+    transform: translateY(0%);
+  }
+
+  .toggle-menu {
+    height: 60px;
+    background-color: $color2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   .children {
-    height: 100vw;
+    height: 100vh;
+    margin-top: 60px;
   }
 
   footer {
