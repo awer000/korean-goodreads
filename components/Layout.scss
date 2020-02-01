@@ -4,6 +4,7 @@
   height: 60px;
   background-color: $color2;
   color: $color3;
+
   header {
     padding-top: 8px;
     padding-left: 10px;
@@ -31,6 +32,31 @@
       color: $color1;
       background-color: $color3;
       cursor: pointer;
+    }
+  }
+
+  .children {
+    height: 100vw;
+  }
+
+  footer {
+    height: 60px;
+    padding: 8px;
+    background-color: $color2;
+    .connect {
+      display: flex;
+      flex-direction: column;
+
+      .icons {
+        padding-top: 8px;
+        a {
+          svg {
+            font-size: 30px;
+            color: $color3;
+            cursor: pointer;
+          }
+        }
+      }
     }
   }
 }

@@ -1,7 +1,8 @@
 import * as React from "react";
 import Link from "next/link";
 import "./Layout.scss";
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaGithub } from "react-icons/fa";
+import { MdMailOutline } from "react-icons/md";
 
 type Props = {
   title?: string;
@@ -18,8 +19,24 @@ const Layout: React.FunctionComponent<Props> = ({ children }) => (
       </Link>
       <button className="signIn-button">로그인</button>
     </header>
-    {children}
-    <footer>이곳은 푸터입니다.</footer>
+    <div className="children">{children}</div>
+    <footer className="site-footer">
+      <div className="connect">
+        <a>CONNECT</a>
+        <div className="icons">
+          <Link href="https://github.com/awer000/korean-goodreads">
+            <a target="_blank">
+              <FaGithub />
+            </a>
+          </Link>
+          <Link href="mailto:awer000@naver.com">
+            <a target="_blank">
+              <MdMailOutline />
+            </a>
+          </Link>
+        </div>
+      </div>
+    </footer>
   </div>
 );
 
