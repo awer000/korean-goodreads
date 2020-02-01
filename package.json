@@ -8,12 +8,14 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "@types/react-headroom": "^2.2.1",
     "@zeit/next-sass": "^1.0.1",
     "isomorphic-unfetch": "3.0.0",
     "next": "latest",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-headroom": "^3.0.0",
     "react-icons": "^3.9.0"
   },
   "devDependencies": {
