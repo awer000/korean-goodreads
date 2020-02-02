@@ -25,7 +25,7 @@ const Layout: React.FunctionComponent<Props> = ({ children }) => (
         top: 60,
         left: 0,
         right: 0,
-        zIndex: 1
+        zIndex: 900
       }}
       disableInlineStyles={true}
     >
@@ -46,16 +46,12 @@ const Layout: React.FunctionComponent<Props> = ({ children }) => (
       <div className="connect">
         <a>CONNECT</a>
         <div className="icons">
-          <Link href="https://github.com/awer000/korean-goodreads">
-            <a target="_blank">
-              <FaGithub />
-            </a>
-          </Link>
-          <Link href="mailto:awer000@naver.com">
-            <a target="_blank">
-              <MdMailOutline />
-            </a>
-          </Link>
+          <a href="https://github.com/awer000/korean-goodreads" target="_blank">
+            <FaGithub />
+          </a>
+          <a href="mailto:awer000@naver.com" target="_blank">
+            <MdMailOutline />
+          </a>
         </div>
       </div>
     </footer>
