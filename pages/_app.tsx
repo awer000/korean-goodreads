@@ -12,6 +12,7 @@ const Goodreads = ({ Component }: ComponentProps) => {
     <>
       <Head>
         <title>nodebird2</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
       </Head>
       <AppLayout>
         <Component />
