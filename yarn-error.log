@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/lelana/.nvm/versions/node/v10.16.3/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js add @types/react-id-swiper @types/swiper
+  /Users/lelana/.nvm/versions/node/v10.16.3/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js add @types/react-id-swiper
 
 PATH: 
   /Users/lelana/.nvm/versions/node/v10.16.3/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/lelana/.ebcli-virtual-env/executables:/Users/lelana/.nvm/versions/node/v10.16.3/bin:/Users/lelana/.yarn-global/bin:/Users/lelana/.yarn-global/bin
@@ -38,6 +38,8 @@ npm manifest:
     },
     "dependencies": {
       "@types/react-headroom": "^2.2.1",
+      "@types/swiper": "^5.2.1",
+      "@zeit/next-css": "^1.0.1",
       "@zeit/next-sass": "^1.0.1",
       "isomorphic-unfetch": "3.0.0",
       "next": "latest",
@@ -787,7 +789,7 @@ Lockfile:
     dependencies:
       "@babel/helper-plugin-utils" "^7.8.3"
   
-  "@babel/plugin-transform-typescript@^7.7.2":
+  "@babel/plugin-transform-typescript@^7.7.2", "@babel/plugin-transform-typescript@^7.8.3":
     version "7.8.3"
     resolved "https://registry.yarnpkg.com/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.8.3.tgz#be6f01a7ef423be68e65ace1f04fc407e6d88917"
     integrity sha512-Ebj230AxcrKGZPKIp4g4TdQLrqX95TobLUWKd/CwG7X1XHUH1ZpkpFvXuXqWbtGRWb7uuEWNlrl681wsOArAdQ==
@@ -891,6 +893,14 @@ Lockfile:
       "@babel/helper-plugin-utils" "^7.0.0"
       "@babel/plugin-transform-typescript" "^7.7.2"
   
+  "@babel/preset-typescript@^7.0.0":
+    version "7.8.3"
+    resolved "https://registry.yarnpkg.com/@babel/preset-typescript/-/preset-typescript-7.8.3.tgz#90af8690121beecd9a75d0cc26c6be39d1595d13"
+    integrity sha512-qee5LgPGui9zQ0jR1TeU5/fP9L+ovoArklEqY12ek8P/wV5ZeM/VYSQYwICeoT6FfpJTekG9Ilay5PhwsOpMHA==
+    dependencies:
+      "@babel/helper-plugin-utils" "^7.8.3"
+      "@babel/plugin-transform-typescript" "^7.8.3"
+  
   "@babel/runtime-corejs2@7.7.2":
     version "7.7.2"
     resolved "https://registry.yarnpkg.com/@babel/runtime-corejs2/-/runtime-corejs2-7.7.2.tgz#5a8c4e2f8688ce58adc9eb1d8320b6e7341f96ce"
@@ -975,6 +985,11 @@ Lockfile:
     dependencies:
       "@types/prop-types" "*"
       csstype "^2.2.0"
+  
+  "@types/swiper@^5.2.1":
+    version "5.2.1"
+    resolved "https://registry.yarnpkg.com/@types/swiper/-/swiper-5.2.1.tgz#889ab9c9041007c27ffa3220097303b6b1670608"
+    integrity sha512-O8Xm3xNbDH7BS1HQqu8xSfqAfLCHsu+D4r7X1k+kuqZ5sEPGAmaoPRzF/P+W1v5lJ58W1UmfsFo38+0A7xE5qg==
   
   "@webassemblyjs/ast@1.8.5":
     version "1.8.5"
@@ -1132,7 +1147,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
     integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
   
-  "@zeit/next-css@1.0.1":
+  "@zeit/next-css@1.0.1", "@zeit/next-css@^1.0.1":
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/@zeit/next-css/-/next-css-1.0.1.tgz#4f784e841e7ca1b21b3468a902e2c1fa95a3e75c"
     integrity sha512-yfHPRy/ne/5SddVClsoy+fpU7e0Cs1gkWA67/wm2uIu+9rznF45yQLxHEt5dPGF3h6IiIh7ZtIgA8VV8YKq87A==
@@ -1151,6 +1166,13 @@ Lockfile:
     dependencies:
       "@zeit/next-css" "1.0.1"
       sass-loader "6.0.6"
+  
+  "@zeit/next-typescript@^1.1.1":
+    version "1.1.1"
+    resolved "https://registry.yarnpkg.com/@zeit/next-typescript/-/next-typescript-1.1.1.tgz#0b0ddfbb13ca04cde52ac2718473f1b9c40ba0ee"
+    integrity sha512-EUcHCASftz1Bc80djkf3cKJrFgvFQyODOH1kty7ShVLLdXMaZpRLj+z7RxrCoNo1bP06w0vtXEDU0cKa0HmGgg==
+    dependencies:
+      "@babel/preset-typescript" "^7.0.0"
   
   abbrev@1:
     version "1.1.1"
