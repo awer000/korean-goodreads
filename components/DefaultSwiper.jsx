@@ -2,9 +2,8 @@ import React from "react";
 import Swiper from "react-id-swiper";
 import "swiper/css/swiper.css";
 import "./DefaultSwiper.scss";
-import { imageMapList } from "../mock/swiperMock";
 
-const CoverflowEffect = ({ title }) => {
+const CoverflowEffect = ({ title, imageMapList }) => {
   const params = {
     slidesPerView: "auto",
     spaceBetween: 10,
