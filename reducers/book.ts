@@ -4,22 +4,31 @@ export const initialState = {
   ItemEditorChoice: [],
 }
 
-const FIND_NEW_SPECIAL_LIST_REQUEST = "FIND_NEW_SPECIAL_LIST_REQUEST";
-const FIND_BEST_SELLER_LIST_REQUEST = "FIND_BEST_SELLER_LIST_REQUEST";
-const FIND_EDITOR_CHOICE_LIST_REQUEST = "FIND_EDITOR_CHOICE_LIST_REQUEST";
+export const FIND_NEW_SPECIAL_LIST_REQUEST = "FIND_NEW_SPECIAL_LIST_REQUEST";
+export const FIND_NEW_SPECIAL_LIST_SUCCESS = "FIND_NEW_SPECIAL_LIST_SUCCESS";
+export const FIND_NEW_SPECIAL_LIST_FAILURE = "FIND_NEW_SPECIAL_LIST_FAILURE";
+
+export const FIND_BEST_SELLER_LIST_REQUEST = "FIND_BEST_SELLER_LIST_REQUEST";
+export const FIND_BEST_SELLER_LIST_SUCCESS = "FIND_BEST_SELLER_LIST_SUCCESS";
+export const FIND_BEST_SELLER_LIST_FAILURE = "FIND_BEST_SELLER_LIST_FAILURE";
+
+export const FIND_EDITOR_CHOICE_LIST_REQUEST = "FIND_EDITOR_CHOICE_LIST_REQUEST";
+export const FIND_EDITOR_CHOICE_LIST_SUCCESS = "FIND_EDITOR_CHOICE_LIST_SUCCESS";
+export const FIND_EDITOR_CHOICE_LIST_FAILURE = "FIND_EDITOR_CHOICE_LIST_FAILURE";
+
 
 interface BookAction {
   type: string,
   data?: object
 }
 
-export const findNewSpecialListRequest = {
+export const findNewSpecialListRequestAction = {
   type: FIND_NEW_SPECIAL_LIST_REQUEST
 }
-export const findBestSellerListRequest = {
+export const findBestSellerListRequestAction = {
   type: FIND_BEST_SELLER_LIST_REQUEST
 }
-export const findEditorChoiceListRequest = {
+export const findEditorChoiceListRequestAction = {
   type: FIND_EDITOR_CHOICE_LIST_REQUEST
 }
 
