@@ -5,8 +5,10 @@ import { NextPage } from "next";
 import withRedux from "next-redux-wrapper";
 import { createStore, compose, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
+import createSagaMiddleware from "redux-saga";
 import reducer from "../reducers/index";
 import "./_app.scss";
+import rootSaga from "../sagas";
 
 interface ComponentProps {
   Component: NextPage;
@@ -27,7 +29,8 @@ const Goodreads = ({ Component, store }: ComponentProps) => {
 };
 
 export default withRedux((initialState, options) => {
-  const middlewares: [] = [];
+  const sagaMiddleware = createSagaMiddleware();
+  const middlewares = [sagaMiddleware];
   const enhancer =
     process.env.NODE_ENV === "production"
       ? compose(applyMiddleware(...middlewares))
@@ -38,5 +41,6 @@ export default withRedux((initialState, options) => {
             : (f: any) => f
         );
   const store = createStore(reducer, initialState, enhancer);
+  sagaMiddleware.run(rootSaga);
   return store;
 })(Goodreads);
