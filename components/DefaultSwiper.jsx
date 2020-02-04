@@ -1,16 +1,16 @@
-import React from "react";
-import Swiper from "react-id-swiper";
-import "swiper/css/swiper.css";
-import "./DefaultSwiper.scss";
+import React from 'react';
+import Swiper from 'react-id-swiper';
+import 'swiper/css/swiper.css';
+import './DefaultSwiper.scss';
 
 const CoverflowEffect = ({ title, imageMapList }) => {
   const params = {
-    slidesPerView: "auto",
+    slidesPerView: 'auto',
     spaceBetween: 10,
     autoplay: {
       delay: 2500,
-      disableOnInteraction: false
-    }
+      disableOnInteraction: false,
+    },
   };
   return (
     <div className="DefaultSwiper">
@@ -22,7 +22,7 @@ const CoverflowEffect = ({ title, imageMapList }) => {
               key={item.src}
               src={item.src}
               style={{
-                backgroundSize: "cover"
+                backgroundSize: 'cover',
               }}
             />
           ))}

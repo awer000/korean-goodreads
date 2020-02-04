@@ -1,6 +1,6 @@
-import * as React from "react";
-import Link from "next/link";
-import { NextPage } from "next";
+import * as React from 'react';
+import Link from 'next/link';
+import { NextPage } from 'next';
 
 const AboutPage: NextPage = () => (
   <>

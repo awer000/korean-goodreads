@@ -1,9 +1,9 @@
-import * as React from "react";
-import Link from "next/link";
-import "./Layout.scss";
-import { FaSearch, FaGithub } from "react-icons/fa";
-import { MdMailOutline, MdArrowDropDown } from "react-icons/md";
-import Headroom from "react-headroom";
+import * as React from 'react';
+import Link from 'next/link';
+import './Layout.scss';
+import { FaSearch, FaGithub } from 'react-icons/fa';
+import { MdMailOutline, MdArrowDropDown } from 'react-icons/md';
+import Headroom from 'react-headroom';
 
 type Props = {
   title?: string;
@@ -25,7 +25,7 @@ const Layout: React.FunctionComponent<Props> = ({ children }) => (
         top: 60,
         left: 0,
         right: 0,
-        zIndex: 900
+        zIndex: 900,
       }}
       disableInlineStyles={true}
     >

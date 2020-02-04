@@ -1,7 +1,7 @@
-import { all, call } from "redux-saga/effects";
-import book from './book'
+import { all, call } from 'redux-saga/effects';
+import book from './book';
 
-
-export default function* rootSaga() {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default function* rootSaga(): any {
   yield all([call(book)]);
 }
