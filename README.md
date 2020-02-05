@@ -1,5 +1,9 @@
-#1일차: Link: [1일차 기록][https://lelana.tistory.com/110]
-#2일차: Link: [2일차 기록][https://lelana.tistory.com/111]
-#3일차: Link: [3일차 기록][https://lelana.tistory.com/112]
-#4일차: Link: [4일차 기록][https://lelana.tistory.com/113]
-#5일차: Link: [5일차 기록][https://lelana.tistory.com/114]
+#1일차 기록 <https://lelana.tistory.com/110>
+
+#2일차 기록 <https://lelana.tistory.com/111>
+
+#3일차 기록 <https://lelana.tistory.com/112>
+
+#4일차 기록 <https://lelana.tistory.com/113>
+
+#5일차 기록 <https://lelana.tistory.com/114>
