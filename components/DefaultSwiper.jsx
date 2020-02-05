@@ -2,6 +2,7 @@ import React from 'react';
 import Swiper from 'react-id-swiper';
 import 'swiper/css/swiper.css';
 import './DefaultSwiper.scss';
+import Link from 'next/link';
 
 const CoverflowEffect = ({ title, imageMapList }) => {
   const params = {
@@ -18,13 +19,11 @@ const CoverflowEffect = ({ title, imageMapList }) => {
       <div className="slide">
         <Swiper {...params}>
           {imageMapList.map(item => (
-            <img
-              key={item.src}
-              src={item.src}
-              style={{
-                backgroundSize: 'cover',
-              }}
-            />
+            <div key={item.src}>
+              <Link href="/book/[itemId]" as={`/book/227133741`}>
+                <img src={item.src} />
+              </Link>
+            </div>
           ))}
         </Swiper>
       </div>

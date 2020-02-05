@@ -1,4 +1,4 @@
-@import "./config/_variables.scss";
+@import './config/_variables.scss';
 
 .DefaultSwiper {
   height: 250px;
@@ -22,9 +22,15 @@
       height: inherit;
 
       .swiper-wrapper {
-        img {
+        .swiper-slide {
           width: 130px;
           height: 190px;
+
+          img {
+            background-size: cover;
+            width: 130px;
+            height: 190px;
+          }
         }
       }
     }
