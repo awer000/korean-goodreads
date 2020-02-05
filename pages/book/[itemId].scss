@@ -1,0 +1,61 @@
+@import './config/_variables.scss';
+
+.Book-id {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $color1;
+
+  padding-top: 10px;
+
+  .book-cover {
+    width: 200px;
+  }
+  .book-information {
+    padding: 10px 20px 0 20px;
+
+    .book-title {
+      font-weight: bold;
+      font-size: 25px;
+    }
+
+    .book-subTitle {
+      margin-top: 5px;
+    }
+
+    .book-pub-information {
+      margin-top: 10px;
+    }
+
+    .book-isbn {
+      margin-top: 5px;
+    }
+
+    .book-category {
+      display: flex;
+      flex-direction: column;
+
+      margin-top: 20px;
+
+      a {
+        font-size: 18px;
+        font-weight: bold;
+        padding-bottom: 5px;
+      }
+    }
+
+    .book-description {
+      display: flex;
+      flex-direction: column;
+
+      margin-top: 20px;
+
+      a {
+        font-size: 18px;
+        font-weight: bold;
+        padding-bottom: 5px;
+      }
+    }
+  }
+}
