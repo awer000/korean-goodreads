@@ -1,9 +1,11 @@
-#1일차 기록 <https://lelana.tistory.com/110>
+# 한국의 Goodreads 개발기
 
-#2일차 기록 <https://lelana.tistory.com/111>
+#1일차 기록: <https://lelana.tistory.com/110>
 
-#3일차 기록 <https://lelana.tistory.com/112>
+#2일차 기록: <https://lelana.tistory.com/111>
 
-#4일차 기록 <https://lelana.tistory.com/113>
+#3일차 기록: <https://lelana.tistory.com/112>
 
-#5일차 기록 <https://lelana.tistory.com/114>
+#4일차 기록: <https://lelana.tistory.com/113>
+
+#5일차 기록: <https://lelana.tistory.com/114>
