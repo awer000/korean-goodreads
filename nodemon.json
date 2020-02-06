@@ -1,0 +1,8 @@
+{
+  "watch": [
+    "server.ts",
+    "nodemon.json"
+  ],
+  "exec": "ts-node -P tsconfig.dev.json server.ts",
+  "ext": "ts tsx jsx"
+}
