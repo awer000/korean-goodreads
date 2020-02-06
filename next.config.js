@@ -4,6 +4,8 @@ const withBundleAnalyzer = require('@zeit/next-bundle-analyzer');
 const withSass = require('@zeit/next-sass');
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const withCss = require('@zeit/next-css');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const compressionPlugin = require('compression-webpack-plugin');
 
 module.exports = withBundleAnalyzer(
   withCss(
@@ -23,10 +25,15 @@ module.exports = withBundleAnalyzer(
       },
       cssModules: true,
       webpack(config) {
+        const plugins = config.plugins;
+        if (process.env.NODE_ENV === 'production') {
+          plugins.push(new compressionPlugin());
+        }
         return {
           ...config,
           mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
           devtool: process.env.NODE_ENV === 'production' ? 'hidden-source-map' : 'eval',
+          plugins,
         };
       },
     }),
