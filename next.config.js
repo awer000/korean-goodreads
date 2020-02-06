@@ -10,6 +10,14 @@ const compressionPlugin = require('compression-webpack-plugin');
 module.exports = withBundleAnalyzer(
   withCss(
     withSass({
+      cssModules: true,
+      cssLoaderOptions: {
+        importLoaders: 1,
+        localIdentName: '[local]___[hash:base64:5]',
+      },
+      sassLoaderOptions: {
+        sourceMap: true,
+      },
       distDir: '.next',
       analyzeServer: ['server', 'both'].includes(process.env.BUNDLE_ANALYZE),
       analyzeBrowser: ['browser', 'both'].includes(process.env.BUNDLE_ANALYZE),
@@ -25,7 +33,7 @@ module.exports = withBundleAnalyzer(
       },
       cssModules: true,
       webpack(config) {
-        const plugins = config.plugins;
+        const plugins = [...config.plugins];
         if (process.env.NODE_ENV === 'production') {
           plugins.push(new compressionPlugin());
         }
