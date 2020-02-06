@@ -5,8 +5,10 @@ import cookieParser from 'cookie-parser';
 import expressSession from 'express-session';
 import dotenv from 'dotenv';
 
-const prod = process.env.NODE_ENV !== 'production';
-const app = next({ prod });
+const dev = process.env.NODE_ENV !== 'production';
+const prod = process.env.NODE_ENV === 'production';
+
+const app = next({ dev });
 const handle = app.getRequestHandler();
 dotenv.config();
 
