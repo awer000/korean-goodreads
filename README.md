@@ -9,3 +9,5 @@
 #4일차 기록: <https://lelana.tistory.com/113>
 
 #5일차 기록: <https://lelana.tistory.com/114>
+
+#6일차 기록: <https://lelana.tistory.com/115>
