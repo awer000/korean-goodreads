@@ -11,3 +11,5 @@
 #5일차 기록: <https://lelana.tistory.com/114>
 
 #6일차 기록: <https://lelana.tistory.com/115>
+
+#7일차 기록: <https://lelana.tistory.com/116>
